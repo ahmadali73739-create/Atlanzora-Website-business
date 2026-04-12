@@ -21,6 +21,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 0;
+flex-wrap:wrap;
+gap:10px;
 }
 
 .logo{
@@ -29,6 +31,19 @@ font-weight:700;
 color:#4da6ff;
 }
 
+/* BUTTON GROUPS */
+.header-buttons,
+.hero-buttons,
+.contact-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;   /* centers horizontally */
+align-items:center;       /* keeps vertical alignment clean */
+margin-top:20px;
+}
+
+/* EMAIL BUTTON */
 .cta-btn{
 background:#4da6ff;
 padding:10px 20px;
@@ -41,6 +56,21 @@ transition:0.3s;
 
 .cta-btn:hover{
 background:#1a8cff;
+}
+
+/* UPWORK BUTTON */
+.upwork-btn{
+background:#14a800;
+padding:10px 20px;
+border-radius:8px;
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.upwork-btn:hover{
+background:#0e8c00;
 }
 
 .hero{
@@ -123,8 +153,9 @@ margin-top:80px;
 color:#888;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media(max-width:900px){
+
 .hero{
 flex-direction:column;
 }
@@ -137,4 +168,10 @@ text-align:center;
 .hero img{
 width:100%;
 }
+
+.header-buttons{
+justify-content:center;
+width:100%;
+}
+
 }
