@@ -1,5 +1,5 @@
 *{
-margin:0;
+margin:-1px;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
@@ -86,7 +86,7 @@ max-width:50%;
 }
 
 .hero-text h1{
-font-size:42px;
+font-size:28px;
 line-height:1.3;
 }
 
